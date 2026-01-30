@@ -29,7 +29,7 @@ const WhyUs: React.FC = () => {
           <div className="p-8 lg:p-12 bg-white border-t-4 border-brand-red rounded-3xl transition-all duration-300 group text-left shadow-[0_20px_50px_rgba(0,0,0,0.06)] hover:shadow-2xl hover:shadow-red-600/10 hover:-translate-y-1">
             <h3 className="text-xl lg:text-2xl font-black mb-6 font-display uppercase tracking-tight text-charcoal">24/7 Local Support</h3>
             <p className="text-muted-gray leading-relaxed text-sm lg:text-base font-semibold">
-              Plans change. Weather happens. We’re <span className="text-brand-red font-extrabold">here in Vietnam</span> and available when you need us, day or night, to handle issues <span class="text-brand-red font-extrabold">quickly</span> and keep your trip running smoothly.
+              Plans change. Weather happens. We’re <span className="text-brand-red font-extrabold">here in Vietnam</span> and available when you need us, day or night, to handle issues <span className="text-brand-red font-extrabold">quickly</span> and keep your trip running smoothly.
             </p>
           </div>
         </div>
