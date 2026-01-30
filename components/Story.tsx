@@ -32,7 +32,7 @@ const Story: React.FC = () => {
               <img
                 alt="Founders"
                 className="w-full h-auto object-contain vivid-img"
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuDji86QRu_zM2_Grmi3gP8QemwLP1qI6BbUJSVprjwKUF1XwcYdUZ9eks-hfj0gPRW68Mfvbn8nfHjkJaG0o_gxeEpQ8KXWY8QRiCprOGw3zS2ibQP59jxeozumdW-X5B58Xj-TvmY1mR5PSUZJ1hYDnKj07byQvxQuu3qz-IS6IPPkIvUImdB6IZkK9ssi-xCCtpjFfnQ19J28Hmj_qDfh-oYWvlTTSREJ-aF66Hp8OKy0apz4WbIXBjjkTe_cGPUIOtp_5y-f56_K"
+                src="https://drive.google.com/file/d/1CY8lWTavWooN5ZEJt_sJELrvBOqXyYU9/view"
               />
             </div>
             <div className="absolute -bottom-6 -right-4 bg-brand-red text-white p-8 max-w-[300px] rounded-3xl shadow-2xl rotate-2">
