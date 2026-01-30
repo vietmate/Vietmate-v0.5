@@ -119,7 +119,7 @@ const Contact: React.FC = () => {
       
       <footer className="w-full bg-charcoal text-white py-8 border-t border-white/5 mt-auto">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center text-[9px] tracking-[0.3em] font-black text-white/30 gap-4">
-          <p>© 2024 VIETMATE. ALL RIGHTS RESERVED. ✨</p>
+          <p>© 2026 VIETMATE.COM ALL RIGHTS RESERVED. ✨</p>
           <div className="flex gap-8">
             <a className="hover:text-white transition-colors" href="#">PRIVACY</a>
             <a className="hover:text-white transition-colors" href="#">TERMS</a>
