@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth h-full overflow-hidden">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vietmate | Vietnam Simplified</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: "#D91B1B",
+              secondary: "#D91B1B",
+              accent: "#D91B1B",
+              "primary-hover": "#B91212",
+              "background-light": "#F9F9F9",
+              "background-warm": "#F8F9FA",
+              "background-cream": "#FFFDF5",
+              "background-dark": "#121212",
+              charcoal: "#1A1A1A",
+              "muted-gray": "#333333",
+              "card-off-white": "#F2F2F2",
+              "brand-red": "#D91B1B",
+            },
+            fontFamily: {
+              display: ["Montserrat", "sans-serif"],
+              sans: ["Inter", "sans-serif"],
+            },
+            borderRadius: {
+              DEFAULT: "12px",
+              xl: "16px",
+              "2xl": "24px",
+              "3xl": "32px",
+            },
+            backgroundImage: {
+              'texture': "url('https://lh3.googleusercontent.com/aida-public/AB6AXuCkC5_D9Wbr9PewHjNYJuL6EQ7rKUghbhQiV8wQ8VG16oH2AKDz8uAuyLSmhP_XdX58JnuBAHab-IOe0LPv2Vfq7NVEeNjqbiXYTApYlFai22L1ui5bzmKYLquX5enZDEtuSmKWuim4f2B9W28j0vvWZwKd4qOJeAxi-NYLSAAq7tYcFII8IYFz-uchLkedIrZKP1v5NGQSyz6p6aEJVQMNy5Rh1X7HfbsRTak08L8v2zuVGyu8Ua51PvYV3aVuXnfeC6H_h5CAH2is')"
+            }
+          },
+        },
+      };
+    </script>
+    <style>
+      /* Custom utility classes not easily covered by Tailwind */
+      .stage-container {
+        scroll-snap-type: y mandatory;
+        height: 100vh;
+        overflow-y: auto;
+        overflow-x: hidden;
+        scrollbar-width: none; /* Firefox */
+      }
+      .stage-container::-webkit-scrollbar {
+        display: none; /* Chrome/Safari */
+      }
+      .stage {
+        scroll-snap-align: start;
+        height: 100vh;
+        width: 100%;
+        position: relative;
+        overflow-y: auto; 
+        overflow-x: hidden;
+      }
+      /* Hide scrollbar for nested stage content if needed */
+      .stage::-webkit-scrollbar {
+          display: none;
+      }
+
+      .carousel-container {
+        scroll-snap-type: x mandatory;
+        scrollbar-width: none;
+      }
+      .carousel-container::-webkit-scrollbar {
+        display: none;
+      }
+      .carousel-item {
+        scroll-snap-align: center;
+      }
+
+      .material-symbols-outlined {
+        font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+      }
+      .star-filled {
+        font-variation-settings: "FILL" 1, "wght" 400, "GRAD" 0, "opsz" 24;
+      }
+      .vivid-img {
+        filter: saturate(1.1) contrast(1.1);
+      }
+      .texture-overlay::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        opacity: 0.03;
+        pointer-events: none;
+        background-image: url(https://lh3.googleusercontent.com/aida-public/AB6AXuCkC5_D9Wbr9PewHjNYJuL6EQ7rKUghbhQiV8wQ8VG16oH2AKDz8uAuyLSmhP_XdX58JnuBAHab-IOe0LPv2Vfq7NVEeNjqbiXYTApYlFai22L1ui5bzmKYLquX5enZDEtuSmKWuim4f2B9W28j0vvWZwKd4qOJeAxi-NYLSAAq7tYcFII8IYFz-uchLkedIrZKP1v5NGQSyz6p6aEJVQMNy5Rh1X7HfbsRTak08L8v2zuVGyu8Ua51PvYV3aVuXnfeC6H_h5CAH2is);
+        z-index: 1;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@^19.2.4",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.4/",
+    "react/": "https://esm.sh/react@^19.2.4/",
+    "vite": "https://esm.sh/vite@^7.3.1",
+    "@vitejs/plugin-react": "https://esm.sh/@vitejs/plugin-react@^5.1.2"
+  }
+}
+</script>
+</head>
+  <body class="bg-background-light text-charcoal font-sans transition-colors duration-300 h-full overflow-hidden">
+    <div id="root"></div>
+    <script type="module" src="./index.tsx"></script>
+  </body>
+</html>
